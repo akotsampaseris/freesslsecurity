@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Meta - Start -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FreeSSL Security | Secure the web for free, forever</title>
+    <!-- Meta -  End  -->
+
+    <!-- Links - Start -->
+    <link rel="icon" href="https://freesvg.org/img/secured.png">
+    {% include 'inc/bootstrap_css.html' %}
+    <!-- Links -  End  -->
+  </head>
+  <body>
+    <div class="wrapper bg-white">
+      <!-- NavBar - Start -->
+      {% include 'inc/navbar.html' %}
+      <!-- NavBar -  End  -->
+
+      <!-- Main Content - Start -->
+      <main role="main" class="container p-4" style="margin-bottom: 384px">
+        <!-- Alerts - Start -->
+        {% include 'inc/alerts.html' %}
+        <!--Alerts -  End  -->
+        
+        {% block content %}
+        Put content here!
+        {% endblock %}
+      </main>
+      <!-- Main Content -  End  -->
+
+      <!-- Footer - Start -->
+      {% include 'inc/footer.html' %}
+      <!-- Footer -  End  -->
+
+      <!-- Optional JavaScript - Start -->
+      {% include 'inc/bootstrap_js.html' %}
+      <!-- Optional JavaScript -  End  -->
+    </div>
+  </body>
+</html>

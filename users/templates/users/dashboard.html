@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Dashboard</h2>
+<hr>
+  {% if users %}
+    {% for user in users %}
+      <p>{{user.email}} - {{user.password}} <a href="{% url 'users:edit' user.email %}">Edit</a> <a href="{% url 'users:delete' user.email %}">Delete</a></p>
+    {% endfor %}
+  {% else %}
+    <p>There are no users!</p>
+  {% endif %}
+{% endblock %}
